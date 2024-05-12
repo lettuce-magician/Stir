@@ -15,8 +15,14 @@ The module can be used both in Studio and using a external text editor using Roj
 
 <TabItem value="2" label="Wally (Rojo/External Editor)">
 
-An installation method with the [Wally Package Manager](https://wally.run) has to still be done, please be patient.
-*(Note: Yes you're able to download it through wally at lettuce-magician/Stir, however it has useless files, and since i'm still figuring out how it works, pardon for my stupidity :P)*
+0. Install wally using `aftman`.
+1. Use `wally init` on your project if you haven't yet.
+2. Add this to your `wally.toml` file:
+```bash
+Stir = "lettuce-magician/stir@1.0.0"
+```
+3. Run `wally install`
+4. Done! Just make sure to insert the `Packages` folder into your `project.json` file and you'll be able to use it.
 
 </TabItem>
 

@@ -27,8 +27,6 @@ description = "Using the Form State allows you to fill in data while validating 
 title = "Reactive Statements"
 description = "If, Switch and Each are state objects that works inside instances but has reactivity implemented"
 
-
-
 [docusaurus]
 title = "Stir"
 projectName = "Stir"

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src=".moonwave/static/Stir.svg" width=100px height=100px/>
+<img src="Stir.svg" width=100px height=100px/>
 
 # Stir
 A collection of Fusion States and Utilities that improve the developer experience.

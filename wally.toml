@@ -1,10 +1,11 @@
 [package]
 name = "lettuce-magician/stir"
-description = "Useful utilities for Fusion."
+description = "A module full of fusion utilities."
 version = "1.0.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 exclude = ["docs","build",".moonwave","Packages","Stir.svg",".gitignore","pack.project.json","moonwave.toml","selene.toml"]
+license = "MIT"
 
 [dependencies]
 Fusion = "elttob/fusion@0.2.0"

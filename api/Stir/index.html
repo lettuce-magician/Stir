@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="plugin-moonwave plugin-id-moonwave">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v2.3.1">
+<title data-rh="true">Stir | Stir</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://lettuce-magician.github.io/Stir/api/Stir"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="Stir | Stir"><meta data-rh="true" name="description" content="The base table for every utilty."><meta data-rh="true" property="og:description" content="The base table for every utilty."><link data-rh="true" rel="icon" href="/Stir/Stir.svg"><link data-rh="true" rel="canonical" href="https://lettuce-magician.github.io/Stir/api/Stir"><link data-rh="true" rel="alternate" href="https://lettuce-magician.github.io/Stir/api/Stir" hreflang="en"><link data-rh="true" rel="alternate" href="https://lettuce-magician.github.io/Stir/api/Stir" hreflang="x-default"><link rel="stylesheet" href="/Stir/assets/css/styles.4e884dbe.css">
+<link rel="preload" href="/Stir/assets/js/runtime~main.39808622.js" as="script">
+<link rel="preload" href="/Stir/assets/js/main.ee4fae04.js" as="script">
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
+<div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/Stir/"><div class="navbar__logo"><img src="/Stir/./Stir.svg" alt="Stir" class="themedImage_ToTc themedImage--light_HNdA"><img src="/Stir/./Stir.svg" alt="Stir" class="themedImage_ToTc themedImage--dark_i4oU"></div><b class="navbar__title text--truncate">Stir</b></a><a class="navbar__item navbar__link" href="/Stir/docs/intro">Docs</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/Stir/api/">API</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/lettuce-magician/Stir" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="searchBox_ZlJk"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input type="search" id="search_input_react" placeholder="Loading..." aria-label="Search" class="navbar__search-input search-bar" disabled=""></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0 docPageContainer_wNNk"><div class="docPage_Dpn1"><div class="docSidebarContainer_o_re"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/Stir/api/Stir">​Stir</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Stir/api/Form">​Form</a></li></ul></nav></div></div><main class="docMainContainer_HJE1"><div class="container padding-vert--lg"><div class="row"><div class="col docItemCol_MU3C"><div class="docItemContainer_Wv98"><article><div class="member_J0w1 markdown"><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_oUs_"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><header><h1 class="docTitle_mZRt" style="text-decoration:none"><span style="display:inline-block">Stir</span></h1><div class="luaClassTags_EipM"></div><div>
+<p>The base table for every utilty.</p>
+</div></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="types">Types<a href="#types" class="hash-link" aria-label="Direct link to Types" title="Direct link to Types">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Symbol"><code style="text-decoration:none">Symbol</code><a href="#Symbol" class="hash-link" aria-label="Direct link to Symbol" title="Direct link to Symbol">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/init.lua#L61"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="purple_ieR2">type</code> <code>Symbol<!-- --> = </code> <code class="blue_P4bS">userdata</code></div><div>
+<p>Symbols like <code>Default</code> and <code>Else</code> are used for some special table keys</p>
+</div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="properties">Properties<a href="#properties" class="hash-link" aria-label="Direct link to Properties" title="Direct link to Properties">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Conditions"><code style="text-decoration:none">Conditions</code><a href="#Conditions" class="hash-link" aria-label="Direct link to Conditions" title="Direct link to Conditions">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/init.lua#L67"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Stir<!-- -->.<!-- -->Conditions<!-- -->:<!-- --> </code> <code class="purple_ieR2">{</code><div class="inset_uKQm"><code>Equals<!-- -->: </code><code class="green_DgR4">(</code><div class="inset_uKQm"><code class="blue_P4bS">v1:StateObject</code><code class="green_DgR4">,</code></div><div class="inset_uKQm"><code class="blue_P4bS">v2:StateObject</code></div><code class="green_DgR4">)</code><code class="green_DgR4"> → </code><code class="green_DgR4">(</code><code class="blue_P4bS">Computed</code><code class="green_DgR4">)</code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code>NotEquals<!-- -->: </code><code class="green_DgR4">(</code><div class="inset_uKQm"><code class="blue_P4bS">v1:StateObject</code><code class="green_DgR4">,</code></div><div class="inset_uKQm"><code class="blue_P4bS">v2:StateObject</code></div><code class="green_DgR4">)</code><code class="green_DgR4"> → </code><code class="green_DgR4">(</code><code class="blue_P4bS">Computed</code><code class="green_DgR4">)</code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code>Greater<!-- -->: </code><code class="green_DgR4">(</code><div class="inset_uKQm"><code class="blue_P4bS">v1:StateObject</code><code class="green_DgR4">,</code></div><div class="inset_uKQm"><code class="blue_P4bS">v2:StateObject</code></div><code class="green_DgR4">)</code><code class="green_DgR4"> → </code><code class="green_DgR4">(</code><code class="blue_P4bS">Computed</code><code class="green_DgR4">)</code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code>Lesser<!-- -->: </code><code class="green_DgR4">(</code><div class="inset_uKQm"><code class="blue_P4bS">v1:StateObject</code><code class="green_DgR4">,</code></div><div class="inset_uKQm"><code class="blue_P4bS">v2:StateObject</code></div><code class="green_DgR4">)</code><code class="green_DgR4"> → </code><code class="green_DgR4">(</code><code class="blue_P4bS">Computed</code><code class="green_DgR4">)</code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code>GreaterEquals<!-- -->: </code><code class="green_DgR4">(</code><div class="inset_uKQm"><code class="blue_P4bS">v1:StateObject</code><code class="green_DgR4">,</code></div><div class="inset_uKQm"><code class="blue_P4bS">v2:StateObject</code></div><code class="green_DgR4">)</code><code class="green_DgR4"> → </code><code class="green_DgR4">(</code><code class="blue_P4bS">Computed</code><code class="green_DgR4">)</code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code>LesserEquals<!-- -->: </code><code class="green_DgR4">(</code><div class="inset_uKQm"><code class="blue_P4bS">v1:StateObject</code><code class="green_DgR4">,</code></div><div class="inset_uKQm"><code class="blue_P4bS">v2:StateObject</code></div><code class="green_DgR4">)</code><code class="green_DgR4"> → </code><code class="green_DgR4">(</code><code class="blue_P4bS">Computed</code><code class="green_DgR4">)</code></div><code class="purple_ieR2">}</code></div><div>
+<p>A few presets computed presets that can be used inside the <code>If</code> specialkey.</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Default"><code style="text-decoration:none">Default</code><a href="#Default" class="hash-link" aria-label="Direct link to Default" title="Direct link to Default">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/init.lua#L74"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Stir<!-- -->.<!-- -->Default<!-- -->:<!-- --> </code> <code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Stir/api/Stir#Symbol">Symbol</a></code></div><div>
+<p>
+  Used inside <code>Switch</code> blocks, it will apply the properties it's passed as long as all
+  the other cases inside the block fails.
+</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Else"><code style="text-decoration:none">Else</code><a href="#Else" class="hash-link" aria-label="Direct link to Else" title="Direct link to Else">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/init.lua#L80"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Stir<!-- -->.<!-- -->Else<!-- -->:<!-- --> </code> <code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Stir/api/Stir#Symbol">Symbol</a></code></div><div>
+<p>Used inside <code>If</code> blocks, self-explinatory.</p>
+</div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="functions">Functions<a href="#functions" class="hash-link" aria-label="Direct link to Functions" title="Direct link to Functions">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="AttributeBind"><code style="text-decoration:none">AttributeBind</code><a href="#AttributeBind" class="hash-link" aria-label="Direct link to AttributeBind" title="Direct link to AttributeBind">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/AttributeBind.lua#L20"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Stir<!-- -->.</code><code class="green_DgR4">AttributeBind</code><code>(</code><div class="inset_uKQm"><div><code>Inst<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Instance" target="_blank" rel="noopener noreferrer">Instance<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code>,</code></div><div><code>Attr<!-- -->: </code><code class="blue_P4bS">string</code></div></div><code>) → </code><code class="blue_P4bS">Value</code></div><div>
+<p>
+  Does the exact same thing as <code>Bind</code>, however it
+  uses an attribute instead of a property.
+</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> Mana <span class="token operator">=</span> <span class="token function">AttributeBind</span><span class="token punctuation">(</span>Humanoid<span class="token punctuation">,</span> <span class="token string">"Mana"</span><span class="token punctuation">)</span>
+<span class="token keyword">local</span> MaxMana <span class="token operator">=</span> <span class="token function">AttributeBind</span><span class="token punctuation">(</span>Humanoid<span class="token punctuation">,</span> <span class="token string">"MaxMana"</span><span class="token punctuation">)</span>
+</code></pre>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Bind"><code style="text-decoration:none">Bind</code><a href="#Bind" class="hash-link" aria-label="Direct link to Bind" title="Direct link to Bind">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/Bind.lua#L24"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Stir<!-- -->.</code><code class="green_DgR4">Bind</code><code>(</code><div class="inset_uKQm"><div><code>Inst<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Instance" target="_blank" rel="noopener noreferrer">Instance<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code>,</code></div><div><code>Prop<!-- -->: </code><code class="blue_P4bS">string</code></div></div><code>) → </code><code class="blue_P4bS">Value</code></div><div>
+<p>
+  Binds a value to a property, and whenever the property
+  updates, it also updates. Yes, <code>Out</code> exists however this
+  is useful when you're just getting a property and you don't
+  want to use Hydration for it, like getting Humanoid's Health.
+</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> Health <span class="token operator">=</span> <span class="token function">Bind</span><span class="token punctuation">(</span>Humanoid<span class="token punctuation">,</span> <span class="token string">"Health"</span><span class="token punctuation">)</span>
+<span class="token keyword">local</span> MaxHealth <span class="token operator">=</span> <span class="token function">Bind</span><span class="token punctuation">(</span>Humanoid<span class="token punctuation">,</span> <span class="token string">"MaxHealth"</span><span class="token punctuation">)</span>
+</code></pre>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Child"><code style="text-decoration:none">Child</code><a href="#Child" class="hash-link" aria-label="Direct link to Child" title="Direct link to Child">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/Child.lua#L38"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Stir<!-- -->.</code><code class="green_DgR4">Child</code><code>(</code><code>childName<!-- -->: </code><code class="blue_P4bS">string</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/enum/SpecialKey" target="_blank" rel="noopener noreferrer">SpecialKey<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div>
+<p>
+  This function is very useful when in pairs with <code>Hydrate</code>.
+  What it simply does is that it hydrates the child of the
+  current instance by name. If the child does not exist it
+  will throw an error.
+</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> Frame <span class="token operator">=</span> New <span class="token string">"Frame"</span> <span class="token punctuation">{</span>
+	<span class="token punctuation">[</span>Children<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+		New <span class="token string">"UIStroke"</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span>Frame<span class="token punctuation">.</span>UIStroke<span class="token punctuation">.</span>Color<span class="token punctuation">)</span> <span class="token comment">-- 0, 0, 0</span>
+
+<span class="token function">Hydrate</span> <span class="token punctuation">(</span>Frame<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token punctuation">[</span>Child <span class="token string">"UIStroke"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+		Color <span class="token operator">=</span> Color3<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span>Frame<span class="token punctuation">.</span>UIStroke<span class="token punctuation">.</span>Color<span class="token punctuation">)</span> <span class="token comment">-- 1, 1, 1</span>
+</code></pre>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Clone"><code style="text-decoration:none">Clone</code><a href="#Clone" class="hash-link" aria-label="Direct link to Clone" title="Direct link to Clone">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/Clone.lua#L21"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Stir<!-- -->.</code><code class="green_DgR4">Clone</code><code>(</code><code>Inst<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Instance" target="_blank" rel="noopener noreferrer">Instance<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code>) → </code><code class="purple_ieR2">(</code><code class="blue_P4bS">Props:PubTypes.PropertyTable</code><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="purple_ieR2">(</code><code class="blue_P4bS">typeof(Inst:Clone())</code><code class="purple_ieR2">)</code></div><div>
+<p>A shorthand for cloning instances and hydrating them in the spot.</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> ToDuplicate <span class="token operator">=</span> <span class="token comment">-- insert here some code that creates an instance --</span>
+<span class="token keyword">local</span> AnDuplicate <span class="token operator">=</span> <span class="token function">Clone</span> <span class="token punctuation">(</span>ToDuplicate<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Parent <span class="token operator">=</span> workspace
+<span class="token punctuation">}</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span>ToDuplicate <span class="token operator">==</span> AnDuplicate<span class="token punctuation">)</span> <span class="token comment">--> false</span>
+</code></pre>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Component"><code style="text-decoration:none">Component</code><a href="#Component" class="hash-link" aria-label="Direct link to Component" title="Direct link to Component">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/Component.lua#L53"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Stir<!-- -->.</code><code class="green_DgR4">Component</code><code>(</code><div class="inset_uKQm"><div><code>Allowed<!-- -->: </code><code class="purple_ieR2">{</code><span><code>[</code><code class="blue_P4bS">string</code><code>]</code></span><code>: </code><code class="blue_P4bS">TypeNames</code><code class="purple_ieR2">}</code><code>,</code></div><div><code>Callback<!-- -->: </code><code class="purple_ieR2">(</code><code>Props<!-- -->: </code><code class="blue_P4bS">PropertyTable</code><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="purple_ieR2">(</code><code class="blue_P4bS">T</code><code class="purple_ieR2">)</code><code class="op_lSLc">}</code></div></div><code>) → </code><code class="purple_ieR2">(</code><code>Props<!-- -->: </code><code class="blue_P4bS">PropertyTable</code><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="purple_ieR2">(</code><code class="blue_P4bS">T</code><code class="purple_ieR2">)</code></div><div>
+<p>
+  Creates a component, which is essentially a piece of a UI Element
+  inside a function that can be built by calling it with the specified
+  arguments, however, this makes it easier to apply validation.
+</p>
+<p>
+  <code>Allowed</code> params indicates the properties that are inside that component,
+  the structure of the table should be the property name as key and their
+  type in the form of a string as value. If the table includes a property
+  of the instance that the component returns, it will automatically hydrate
+  it (<em>this does not apply to events</em>), to allow the parameter to get any type,
+  set it to "any".
+</p>
+<p>
+  <code>Callback</code> is the callback that returns the component itself, it receives
+  all the allowed properties, incluinding instance properties.
+</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> Button <span class="token operator">=</span> <span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>Text<span class="token operator">=</span><span class="token string">"string"</span><span class="token punctuation">,</span> Activated<span class="token operator">=</span><span class="token string">"function"</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>Props<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> New <span class="token string">"TextButton"</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">[</span>OnEvent <span class="token string">"Activated"</span><span class="token punctuation">]</span> <span class="token operator">=</span> Props<span class="token punctuation">.</span>Activated
+    <span class="token punctuation">}</span>
+<span class="token keyword">end</span><span class="token punctuation">)</span>
+
+<span class="token keyword">local</span> Test <span class="token operator">=</span> <span class="token function">Button</span> <span class="token punctuation">{</span>
+    Text <span class="token operator">=</span> <span class="token string">"Hello World!"</span><span class="token punctuation">,</span>
+    Activated <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Clicked!"</span><span class="token punctuation">)</span>
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span>Test<span class="token punctuation">.</span>Text<span class="token punctuation">)</span> <span class="token comment">--> Hello World!</span>
+</code></pre>
+<div class="admonition admonition-info alert alert--info">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+          <path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path>
+        </svg></span>info</h5>
+  </div>
+  <div class="admonition-content">
+    <p>
+      Just reinforcing: this is almost no different from simply creating a function
+      and returning an instance created by Fusion, this just adds
+      type validation and auto-hydration.
+    </p>
+  </div>
+</div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Each"><code style="text-decoration:none">Each</code><a href="#Each" class="hash-link" aria-label="Direct link to Each" title="Direct link to Each">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/Each.lua#L32"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Stir<!-- -->.</code><code class="green_DgR4">Each</code><code>(</code><code>dict<!-- -->: </code><code class="blue_P4bS">PubTypes.CanBeState</code><code class="op_lSLc">&lt;</code><code class="purple_ieR2">{</code><span><code>[</code><code class="blue_P4bS">string</code><code>]</code></span><code class="blue_P4bS">:any</code><code class="purple_ieR2">}</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS">PubTypes.SpecialKey</code></div><div>
+<p>
+  Each is used for looping through a key/value pair table and adding children or adding specific
+  properties. If the passed value is a state, then everytime the state updates, it will react
+  accordingly.
+</p>
+<pre class="language-lua"><code class="language-lua">New <span class="token string">"Frame"</span> <span class="token punctuation">{</span>
+	New <span class="token string">"UIGridLayout"</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+	<span class="token punctuation">[</span><span class="token function">Each</span><span class="token punctuation">(</span>Settings<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>Key<span class="token punctuation">,</span>Value<span class="token punctuation">)</span>
+		<span class="token keyword">return</span> New <span class="token string">"TextLabel"</span> <span class="token punctuation">{</span>
+			Text <span class="token operator">=</span> Key<span class="token operator">..</span><span class="token string">": "</span><span class="token operator">..</span>Value
+		<span class="token punctuation">}</span>
+	<span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<div class="admonition admonition-warning alert alert--danger">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+          <path d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path>
+        </svg></span>warning</h5>
+  </div>
+  <div class="admonition-content">
+    <p>
+      <code>Each</code> uses <code>pairs</code> for looping through the table, meaning list elements will not
+      appear sequencially. In that case, use <code>Iter</code> instead for lists and sequencial
+      values.
+    </p>
+  </div>
+</div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="ElseIf"><code style="text-decoration:none">ElseIf</code><a href="#ElseIf" class="hash-link" aria-label="Direct link to ElseIf" title="Direct link to ElseIf">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/ElseIf.lua#L42"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Stir<!-- -->.</code><code class="green_DgR4">ElseIf</code><code>(</code><code>conditional<!-- -->: </code><code class="blue_P4bS">PubTypes.CanBeState</code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">boolean</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/enum/SpecialKey" target="_blank" rel="noopener noreferrer">SpecialKey<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div>
+<p>
+  This function opens another clause inside an <code>If</code> statement.
+  However unlike the <code>If</code> statement, it is not reactive, and
+  only updates when the value inside <code>If</code> does. However this
+  still checks if the passed condition is true before hydrating
+  it.
+</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> State <span class="token operator">=</span> <span class="token function">Value</span><span class="token punctuation">(</span><span class="token keyword">false</span><span class="token punctuation">)</span>
+<span class="token keyword">local</span> CheckBox <span class="token operator">=</span> New <span class="token string">"TextButton"</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token function">If</span><span class="token punctuation">(</span>State<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">-- Updates whenver the value `State` changes.</span>
+        Text <span class="token operator">=</span> <span class="token string">"Activated"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">[</span><span class="token function">ElseIf</span><span class="token punctuation">(</span>State<span class="token punctuation">:</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token keyword">false</span><span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">-- if the state value is false</span>
+            Text <span class="token operator">=</span> <span class="token string">"Deactivated"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">[</span>Else<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">-- If the state value is any other value</span>
+            Text <span class="token operator">=</span> <span class="token string">"What the...."</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token punctuation">[</span>OnEvent <span class="token string">"Activated"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token operator">&#x3C;</span> <span class="token number">5</span> <span class="token keyword">then</span>
+            State<span class="token punctuation">:</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token keyword">nil</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span>
+            State<span class="token punctuation">:</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token keyword">not</span> State<span class="token punctuation">:</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">end</span>
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Form"><code style="text-decoration:none">Form</code><a href="#Form" class="hash-link" aria-label="Direct link to Form" title="Direct link to Form">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/Form.lua#L194"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Stir<!-- -->.</code><code class="green_DgR4">Form</code><code>(</code><code>validators<!-- -->: </code><code class="purple_ieR2">{</code><div class="inset_uKQm"><span><code>[</code><code class="blue_P4bS">string</code><code>]</code></span><code class="blue_P4bS">:(any</code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code class="green_DgR4">(</code><code class="blue_P4bS">boolean</code><code class="green_DgR4">)</code><code class="green_DgR4"> → </code><code class="green_DgR4">(</code><code class="green_DgR4">)</code><code class="blue_P4bS">)</code><code class="green_DgR4"> → </code><code class="green_DgR4">(</code><code class="blue_P4bS">boolean</code><code class="green_DgR4">)</code></div><code class="purple_ieR2">}</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Stir/api/Form">Form</a></code></div><div>
+<p>
+  Creates a Form object, which is used for creating stuff like login pages
+  and quizes.
+</p>
+<p>
+  The first argument is a dictionary, with Form Field names as keys, and
+  their validation function as values. The validator functions gets two parameters:
+  The value that was submitted and a function that decides whenver the field will
+  be allowed to post. The validator function needs to return a boolean which indicates
+  if there are errors on the validated value, and an error message if there is an error.
+</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> LoginPage <span class="token operator">=</span> <span class="token function">Form</span> <span class="token punctuation">{</span>
+    Password <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>CurrentValue<span class="token punctuation">:</span>string<span class="token punctuation">,</span> CanPost<span class="token punctuation">:</span><span class="token punctuation">(</span>boolean<span class="token punctuation">,</span> string<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span><span class="token punctuation">(</span>boolean<span class="token punctuation">,</span> string<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token function">CanPost</span><span class="token punctuation">(</span><span class="token operator">#</span>CurrentValue <span class="token operator">>=</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token string">"Password must be atleast 8 characters long!"</span><span class="token punctuation">)</span>
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+
+LoginPage<span class="token punctuation">:</span><span class="token function">onSubmit</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+<span class="token keyword">end</span><span class="token punctuation">)</span>
+
+LoginPage<span class="token punctuation">:</span><span class="token function">onPost</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Password posted successfully!"</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span><span class="token punctuation">)</span>
+
+LoginPage<span class="token punctuation">:</span><span class="token function">onError</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>errors<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>errors<span class="token punctuation">)</span>
+<span class="token keyword">end</span><span class="token punctuation">)</span>
+
+New <span class="token string">"TextBox"</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span>Out <span class="token string">"Text"</span><span class="token punctuation">]</span> <span class="token operator">=</span> LoginPage<span class="token punctuation">:</span>field <span class="token string">"Password"</span>
+<span class="token punctuation">}</span>
+
+New <span class="token string">"TextButton"</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span>OnEvent <span class="token string">"Activated"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        LoginPage<span class="token punctuation">:</span><span class="token function">submit</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="If"><code style="text-decoration:none">If</code><a href="#If" class="hash-link" aria-label="Direct link to If" title="Direct link to If">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/If.lua#L37"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Stir<!-- -->.</code><code class="green_DgR4">If</code><code>(</code><code>conditional<!-- -->: </code><code class="blue_P4bS">PubTypes.StateObject</code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">boolean</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/enum/SpecialKey" target="_blank" rel="noopener noreferrer">SpecialKey<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div>
+<p>
+  This functions open a conditional statement that reacts to changes of the value.
+  It is commonly paired with <code>ElseIf</code> and <code>Else</code> to create a totally reactive control
+  flow.
+</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> State <span class="token operator">=</span> <span class="token function">Value</span><span class="token punctuation">(</span><span class="token keyword">false</span><span class="token punctuation">)</span>
+<span class="token keyword">local</span> CheckBox <span class="token operator">=</span> New <span class="token string">"ImageButton"</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token function">If</span><span class="token punctuation">(</span>State<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">-- Updates whenver the value `State` changes.</span>
+        Text <span class="token operator">=</span> <span class="token string">"Activated"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">[</span>Else<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">-- If the state value is false</span>
+            Text <span class="token operator">=</span> <span class="token string">"Deactivated"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token punctuation">[</span>OnEvent <span class="token string">"Activated"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        State<span class="token punctuation">:</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token keyword">not</span> State<span class="token punctuation">:</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Iter"><code style="text-decoration:none">Iter</code><a href="#Iter" class="hash-link" aria-label="Direct link to Iter" title="Direct link to Iter">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/Iter.lua#L27"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Stir<!-- -->.</code><code class="green_DgR4">Iter</code><code>(</code><code>list<!-- -->: </code><code class="purple_ieR2">{</code><code class="blue_P4bS">any</code><code class="purple_ieR2">}</code><code>) → </code><code class="blue_P4bS">PubTypes.SpecialKey</code></div><div>
+<p>
+  Iter has the same function as <a href="/Stir/api/Stir#Each">Stir.Each</a>, however it applies the
+  values of the list sequencially, instead of randomly.
+</p>
+<pre class="language-lua"><code class="language-lua">New <span class="token string">"Frame"</span> <span class="token punctuation">{</span>
+	New <span class="token string">"UIGridLayout"</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+	<span class="token punctuation">[</span><span class="token function">Iter</span><span class="token punctuation">(</span>PlayerList<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>Key<span class="token punctuation">,</span>Value<span class="token punctuation">)</span>
+		<span class="token keyword">return</span> New <span class="token string">"TextLabel"</span> <span class="token punctuation">{</span>
+			Text <span class="token operator">=</span> Value
+		<span class="token punctuation">}</span>
+	<span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<div class="admonition admonition-warning alert alert--danger">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+          <path d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path>
+        </svg></span>warning</h5>
+  </div>
+  <div class="admonition-content">
+    <p><code>Iter</code> will not work on dicts and table keys that are not numbers. Use <code>Each</code> for this case instead.</p>
+  </div>
+</div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Observe"><code style="text-decoration:none">Observe</code><a href="#Observe" class="hash-link" aria-label="Direct link to Observe" title="Direct link to Observe">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/Observe.lua#L21"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Stir<!-- -->.</code><code class="green_DgR4">Observe</code><code>(</code><div class="inset_uKQm"><div><code>State<!-- -->: </code><code class="blue_P4bS">PubTypes.StateObject</code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">any</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>Fn<!-- -->: </code><code class="purple_ieR2">(</code><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="purple_ieR2">(</code><code class="purple_ieR2">)</code><code>,</code></div><div><code>RunOnBind<!-- -->: </code><code class="blue_P4bS">boolean?</code></div></div><code>) → </code><code class="purple_ieR2">(</code><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="purple_ieR2">(</code><code class="purple_ieR2">)</code></div><div>
+<p>
+  A shorthand for using <code>Observer:onChange</code>, can also make it so it runs the
+  callback when the callback is binded.
+</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> TimesChanged <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token function">Observe</span><span class="token punctuation">(</span>someState<span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    TimesChanged <span class="token operator">+</span><span class="token operator">=</span> <span class="token number">1</span>
+<span class="token keyword">end</span><span class="token punctuation">,</span> <span class="token keyword">true</span><span class="token punctuation">)</span> <span class="token comment">-- RunOnBind is true.</span>
+<span class="token function">print</span><span class="token punctuation">(</span>TimesChanged<span class="token punctuation">)</span> <span class="token comment">--> 1</span>
+</code></pre>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Switch"><code style="text-decoration:none">Switch</code><a href="#Switch" class="hash-link" aria-label="Direct link to Switch" title="Direct link to Switch">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/Switch.lua#L41"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Stir<!-- -->.</code><code class="green_DgR4">Switch</code><code>(</code><code>state<!-- -->: </code><code class="blue_P4bS">PubTypes.StateObject</code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">any</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/enum/SpecialKey" target="_blank" rel="noopener noreferrer">SpecialKey<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div>
+<p>
+  Has some of the same logic as <code>If</code>, however it is more used
+  to check if a state object has a specific value.
+</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> State <span class="token operator">=</span> <span class="token function">Value</span><span class="token punctuation">(</span><span class="token keyword">false</span><span class="token punctuation">)</span>
+<span class="token keyword">local</span> CheckBox <span class="token operator">=</span> New <span class="token string">"TextButton"</span> <span class="token punctuation">{</span>
+	<span class="token punctuation">[</span><span class="token function">Switch</span><span class="token punctuation">(</span>State<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">-- Updates whenver the value `State` changes.</span>
+		<span class="token punctuation">[</span><span class="token keyword">true</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">-- If true</span>
+			Text <span class="token operator">=</span> <span class="token string">"Activated"</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">[</span><span class="token keyword">false</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">-- If false</span>
+			Text <span class="token operator">=</span> <span class="token string">"Deactivated"</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">[</span>Default<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">-- If the state value is any other value</span>
+			Text <span class="token operator">=</span> <span class="token string">"What the...."</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">[</span>OnEvent <span class="token string">"Activated"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+		<span class="token keyword">if</span> math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token operator">&#x3C;</span> <span class="token number">5</span> <span class="token keyword">then</span>
+			State<span class="token punctuation">:</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token keyword">nil</span><span class="token punctuation">)</span>
+		<span class="token keyword">else</span>
+			State<span class="token punctuation">:</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token keyword">not</span> State<span class="token punctuation">:</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+		<span class="token keyword">end</span>
+	<span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Template"><code style="text-decoration:none">Template</code><a href="#Template" class="hash-link" aria-label="Direct link to Template" title="Direct link to Template">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/lettuce-magician/Stir/blob/main/src/Template.lua#L36"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Stir<!-- -->.</code><code class="green_DgR4">Template</code><code>(</code><div class="inset_uKQm"><div><code>Custom<!-- -->: </code><code class="purple_ieR2">{</code><span><code>[</code><code class="blue_P4bS">string</code><code>]</code></span><code>: </code><code class="blue_P4bS">TypeNames</code><code class="purple_ieR2">}</code><code>,</code></div><div><code>Callback<!-- -->: </code><code class="purple_ieR2">(</code><code>Props<!-- -->: </code><code class="blue_P4bS">PropertyTable</code><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="purple_ieR2">(</code><code class="blue_P4bS">T</code><code class="purple_ieR2">)</code></div></div><code>) → </code><code class="blue_P4bS">function</code></div><div>
+<p>
+  Templates are like Components, except they accept
+  any instance property + custom properties that are handled
+  inside of itself. This is quite useful when
+  creating a base for different components that have
+  a similar structure.
+</p>
+<p>
+  <code>Custom</code> have the same structure as <code>Allowed</code> in <em>Components</em>,
+  same thing for <code>Callback</code>
+</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> BaseButton <span class="token operator">=</span> <span class="token function">Template</span><span class="token punctuation">(</span><span class="token punctuation">{</span>Type<span class="token operator">=</span><span class="token string">"string"</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>Props<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token function">New</span> <span class="token punctuation">(</span>Props<span class="token punctuation">.</span>Type<span class="token operator">..</span><span class="token string">"Button"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">end</span><span class="token punctuation">)</span>
+
+<span class="token keyword">local</span> Image <span class="token operator">=</span> <span class="token function">BaseButton</span> <span class="token punctuation">{</span>Type<span class="token operator">=</span><span class="token string">"Image"</span><span class="token punctuation">}</span>
+<span class="token keyword">local</span> Text <span class="token operator">=</span> <span class="token function">BaseButton</span> <span class="token punctuation">{</span>Type<span class="token operator">=</span><span class="token string">"Text"</span><span class="token punctuation">}</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span>Image<span class="token punctuation">.</span>ClassName<span class="token punctuation">)</span> <span class="token comment">--> ImageButton</span>
+<span class="token function">print</span><span class="token punctuation">(</span>Text<span class="token punctuation">.</span>ClassName<span class="token punctuation">)</span>  <span class="token comment">--> TextButton</span>
+</code></pre>
+</div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
+    &quot;functions&quot;: [
+        {
+            &quot;name&quot;: &quot;AttributeBind&quot;,
+            &quot;desc&quot;: &quot;Does the exact same thing as `Bind`, however it\nuses an attribute instead of a property.\n\n```lua\nlocal Mana = AttributeBind(Humanoid, \&quot;Mana\&quot;)\nlocal MaxMana = AttributeBind(Humanoid, \&quot;MaxMana\&quot;)\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;Inst&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Instance&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Attr&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;string&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Value&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 20,
+                &quot;path&quot;: &quot;src/AttributeBind.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Bind&quot;,
+            &quot;desc&quot;: &quot;Binds a value to a property, and whenever the property\nupdates, it also updates. Yes, `Out` exists however this\nis useful when you&#x27;re just getting a property and you don&#x27;t\nwant to use Hydration for it, like getting Humanoid&#x27;s Health.\n\n```lua\nlocal Health = Bind(Humanoid, \&quot;Health\&quot;)\nlocal MaxHealth = Bind(Humanoid, \&quot;MaxHealth\&quot;)\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;Inst&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Instance&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Prop&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;string&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Value&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 24,
+                &quot;path&quot;: &quot;src/Bind.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Child&quot;,
+            &quot;desc&quot;: &quot;This function is very useful when in pairs with `Hydrate`.\nWhat it simply does is that it hydrates the child of the\ncurrent instance by name. If the child does not exist it\nwill throw an error.\n\n```lua\nlocal Frame = New \&quot;Frame\&quot; {\n\t[Children] = {\n\t\tNew \&quot;UIStroke\&quot; {}\n\t}\n}\n\nprint(Frame.UIStroke.Color) -- 0, 0, 0\n\nHydrate (Frame) {\n\t[Child \&quot;UIStroke\&quot;] = {\n\t\tColor = Color3.new(1,1,1)\n\t}\n}\n\nprint(Frame.UIStroke.Color) -- 1, 1, 1\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;childName&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;string&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;SpecialKey&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 38,
+                &quot;path&quot;: &quot;src/Child.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Clone&quot;,
+            &quot;desc&quot;: &quot;A shorthand for cloning instances and hydrating them in the spot.\n\n```lua\nlocal ToDuplicate = -- insert here some code that creates an instance --\nlocal AnDuplicate = Clone (ToDuplicate) {\n    Parent = workspace\n}\n\nprint(ToDuplicate == AnDuplicate) --&gt; false\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;Inst&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Instance&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;(Props:PubTypes.PropertyTable) -&gt;(typeof(Inst:Clone()))\r\n&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 21,
+                &quot;path&quot;: &quot;src/Clone.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Component&quot;,
+            &quot;desc&quot;: &quot;Creates a component, which is essentially a piece of a UI Element\ninside a function that can be built by calling it with the specified\narguments, however, this makes it easier to apply validation.\n\n`Allowed` params indicates the properties that are inside that component,\nthe structure of the table should be the property name as key and their\ntype in the form of a string as value. If the table includes a property\nof the instance that the component returns, it will automatically hydrate\nit (*this does not apply to events*), to allow the parameter to get any type,\nset it to \&quot;any\&quot;.\n\n`Callback` is the callback that returns the component itself, it receives\nall the allowed properties, incluinding instance properties.\n```lua\nlocal Button = Component({Text=\&quot;string\&quot;, Activated=\&quot;function\&quot;}, function(Props)\n    return New \&quot;TextButton\&quot; {\n        [OnEvent \&quot;Activated\&quot;] = Props.Activated\n    }\nend)\n\nlocal Test = Button {\n    Text = \&quot;Hello World!\&quot;,\n    Activated = function()\n        print(\&quot;Clicked!\&quot;)\n    end\n}\n\nprint(Test.Text) --&gt; Hello World!\n```\n:::info\nJust reinforcing: this is almost no different from simply creating a function\nand returning an instance created by Fusion, this just adds\ntype validation and auto-hydration.\n:::&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;Allowed&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;{[string]: TypeNames}&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Callback&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;(Props: PropertyTable) -&gt; (T)}&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;(Props: PropertyTable)-&gt;(T)&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 53,
+                &quot;path&quot;: &quot;src/Component.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Each&quot;,
+            &quot;desc&quot;: &quot;Each is used for looping through a key/value pair table and adding children or adding specific\nproperties. If the passed value is a state, then everytime the state updates, it will react\naccordingly.\n\n```lua\nNew \&quot;Frame\&quot; {\n\tNew \&quot;UIGridLayout\&quot; {}\n\t[Each(Settings)] = function(Key,Value)\n\t\treturn New \&quot;TextLabel\&quot; {\n\t\t\tText = Key..\&quot;: \&quot;..Value\n\t\t}\n\tend\n}\n```\n\n:::warning\n`Each` uses `pairs` for looping through the table, meaning list elements will not\nappear sequencially. In that case, use `Iter` instead for lists and sequencial\nvalues.\n:::&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;dict&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;PubTypes.CanBeState&lt;{[string]:any}&gt;&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;PubTypes.SpecialKey\r\n&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 32,
+                &quot;path&quot;: &quot;src/Each.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;ElseIf&quot;,
+            &quot;desc&quot;: &quot;This function opens another clause inside an `If` statement.\nHowever unlike the `If` statement, it is not reactive, and\nonly updates when the value inside `If` does. However this\nstill checks if the passed condition is true before hydrating\nit.\n\n```lua\nlocal State = Value(false)\nlocal CheckBox = New \&quot;TextButton\&quot; {\n    [If(State)] = { -- Updates whenver the value `State` changes.\n        Text = \&quot;Activated\&quot;,\n        [ElseIf(State:get() == false)] = { -- if the state value is false\n            Text = \&quot;Deactivated\&quot;\n        },\n        [Else] = { -- If the state value is any other value\n            Text = \&quot;What the....\&quot;\n        }\n    },\n\n    [OnEvent \&quot;Activated\&quot;] = function()\n        if math.random(1,20) &lt; 5 then\n            State:set(nil)\n        else\n            State:set(not State:get())\n        end\n    end\n}\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;conditional&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;PubTypes.CanBeState&lt;boolean&gt;&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;SpecialKey&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 42,
+                &quot;path&quot;: &quot;src/ElseIf.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Form&quot;,
+            &quot;desc&quot;: &quot;Creates a Form object, which is used for creating stuff like login pages\nand quizes.\n\nThe first argument is a dictionary, with Form Field names as keys, and\ntheir validation function as values. The validator functions gets two parameters:\nThe value that was submitted and a function that decides whenver the field will\nbe allowed to post. The validator function needs to return a boolean which indicates\nif there are errors on the validated value, and an error message if there is an error.\n\n```lua\nlocal LoginPage = Form {\n    Password = function(CurrentValue:string, CanPost:(boolean, string)-&gt;(boolean, string))\n        return CanPost(#CurrentValue &gt;= 8, \&quot;Password must be atleast 8 characters long!\&quot;)\n    end\n}\n\nLoginPage:onSubmit(function(result)\n    print(result)\nend)\n\nLoginPage:onPost(function()\n    print(\&quot;Password posted successfully!\&quot;)\nend)\n\nLoginPage:onError(function(errors)\n    print(errors)\nend)\n\nNew \&quot;TextBox\&quot; {\n    [Out \&quot;Text\&quot;] = LoginPage:field \&quot;Password\&quot;\n}\n\nNew \&quot;TextButton\&quot; {\n    [OnEvent \&quot;Activated\&quot;] = function()\n        LoginPage:submit()\n    end\n}\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;validators&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;{[string]:(any, (boolean)-&gt;())-&gt;(boolean)}&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Form&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 194,
+                &quot;path&quot;: &quot;src/Form.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;If&quot;,
+            &quot;desc&quot;: &quot;This functions open a conditional statement that reacts to changes of the value.\nIt is commonly paired with `ElseIf` and `Else` to create a totally reactive control\nflow.\n\n```lua\nlocal State = Value(false)\nlocal CheckBox = New \&quot;ImageButton\&quot; {\n    [If(State)] = { -- Updates whenver the value `State` changes.\n        Text = \&quot;Activated\&quot;,\n        [Else] = { -- If the state value is false\n            Text = \&quot;Deactivated\&quot;\n        }\n    },\n\n    [OnEvent \&quot;Activated\&quot;] = function()\n        State:set(not State:get())\n    end\n}\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;conditional&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;PubTypes.StateObject&lt;boolean&gt;&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;SpecialKey&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 37,
+                &quot;path&quot;: &quot;src/If.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Iter&quot;,
+            &quot;desc&quot;: &quot;Iter has the same function as [Stir.Each], however it applies the\nvalues of the list sequencially, instead of randomly.\n\n```lua\nNew \&quot;Frame\&quot; {\n\tNew \&quot;UIGridLayout\&quot; {}\n\t[Iter(PlayerList)] = function(Key,Value)\n\t\treturn New \&quot;TextLabel\&quot; {\n\t\t\tText = Value\n\t\t}\n\tend\n}\n```\n\n:::warning\n`Iter` will not work on dicts and table keys that are not numbers. Use `Each` for this case instead.\n:::&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;list&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;{any}&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;PubTypes.SpecialKey\r\n&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 27,
+                &quot;path&quot;: &quot;src/Iter.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Observe&quot;,
+            &quot;desc&quot;: &quot;A shorthand for using `Observer:onChange`, can also make it so it runs the\ncallback when the callback is binded.\n\n```lua\nlocal TimesChanged = 0\nObserve(someState,function()\n    TimesChanged += 1\nend, true) -- RunOnBind is true.\nprint(TimesChanged) --&gt; 1\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;State&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;PubTypes.StateObject&lt;any&gt;&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Fn&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;()-&gt;()&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;RunOnBind&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;boolean?&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;()-&gt;()\r\n&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 21,
+                &quot;path&quot;: &quot;src/Observe.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Switch&quot;,
+            &quot;desc&quot;: &quot;Has some of the same logic as `If`, however it is more used\nto check if a state object has a specific value.\n\n```lua\nlocal State = Value(false)\nlocal CheckBox = New \&quot;TextButton\&quot; {\n\t[Switch(State)] = { -- Updates whenver the value `State` changes.\n\t\t[true] = { -- If true\n\t\t\tText = \&quot;Activated\&quot;\n\t\t},\n\t\t[false] = { -- If false\n\t\t\tText = \&quot;Deactivated\&quot;\n\t\t},\n\t\t[Default] = { -- If the state value is any other value\n\t\t\tText = \&quot;What the....\&quot;\n\t\t}\n\t},\n\t[OnEvent \&quot;Activated\&quot;] = function()\n\t\tif math.random(1,20) &lt; 5 then\n\t\t\tState:set(nil)\n\t\telse\n\t\t\tState:set(not State:get())\n\t\tend\n\tend\n}\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;state&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;PubTypes.StateObject&lt;any&gt;&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;SpecialKey&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 41,
+                &quot;path&quot;: &quot;src/Switch.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Template&quot;,
+            &quot;desc&quot;: &quot;Templates are like Components, except they accept\nany instance property + custom properties that are handled\ninside of itself. This is quite useful when\ncreating a base for different components that have\na similar structure.\n\n`Custom` have the same structure as `Allowed` in *Components*,\nsame thing for `Callback`\n\n```lua\nlocal BaseButton = Template({Type=\&quot;string\&quot;}, function(Props)\n    return New (Props.Type..\&quot;Button\&quot;) {}\nend)\n\nlocal Image = BaseButton {Type=\&quot;Image\&quot;}\nlocal Text = BaseButton {Type=\&quot;Text\&quot;}\n\nprint(Image.ClassName) --&gt; ImageButton\nprint(Text.ClassName)  --&gt; TextButton\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;Custom&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;{[string]: TypeNames}&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;Callback&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;(Props: PropertyTable) -&gt; (T)&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;function&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 36,
+                &quot;path&quot;: &quot;src/Template.lua&quot;
+            }
+        }
+    ],
+    &quot;properties&quot;: [
+        {
+            &quot;name&quot;: &quot;Conditions&quot;,
+            &quot;desc&quot;: &quot;A few presets computed presets that can be used inside the `If` specialkey.&quot;,
+            &quot;lua_type&quot;: &quot;{Equals: (v1:StateObject,v2:StateObject)-&gt;(Computed),NotEquals: (v1:StateObject,v2:StateObject)-&gt;(Computed),Greater: (v1:StateObject,v2:StateObject)-&gt;(Computed),Lesser: (v1:StateObject,v2:StateObject)-&gt;(Computed),GreaterEquals: (v1:StateObject,v2:StateObject)-&gt;(Computed),LesserEquals: (v1:StateObject,v2:StateObject)-&gt;(Computed)}&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 67,
+                &quot;path&quot;: &quot;src/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Default&quot;,
+            &quot;desc&quot;: &quot;Used inside `Switch` blocks, it will apply the properties it&#x27;s passed as long as all\nthe other cases inside the block fails.&quot;,
+            &quot;lua_type&quot;: &quot;Symbol&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 74,
+                &quot;path&quot;: &quot;src/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Else&quot;,
+            &quot;desc&quot;: &quot;Used inside `If` blocks, self-explinatory.&quot;,
+            &quot;lua_type&quot;: &quot;Symbol&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 80,
+                &quot;path&quot;: &quot;src/init.lua&quot;
+            }
+        }
+    ],
+    &quot;types&quot;: [
+        {
+            &quot;name&quot;: &quot;Symbol&quot;,
+            &quot;desc&quot;: &quot;Symbols like `Default` and `Else` are used for some special table keys\r&quot;,
+            &quot;lua_type&quot;: &quot;userdata&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 61,
+                &quot;path&quot;: &quot;src/init.lua&quot;
+            }
+        }
+    ],
+    &quot;name&quot;: &quot;Stir&quot;,
+    &quot;desc&quot;: &quot;The base table for every utilty.\r&quot;,
+    &quot;source&quot;: {
+        &quot;line&quot;: 18,
+        &quot;path&quot;: &quot;src/init.lua&quot;
+    }
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a><ul><li><a href="#Symbol" class="table-of-contents__link toc-highlight">Symbol</a></li></ul></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a><ul><li><a href="#Conditions" class="table-of-contents__link toc-highlight">Conditions</a></li><li><a href="#Default" class="table-of-contents__link toc-highlight">Default</a></li><li><a href="#Else" class="table-of-contents__link toc-highlight">Else</a></li></ul></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#AttributeBind" class="table-of-contents__link toc-highlight">.AttributeBind</a></li><li><a href="#Bind" class="table-of-contents__link toc-highlight">.Bind</a></li><li><a href="#Child" class="table-of-contents__link toc-highlight">.Child</a></li><li><a href="#Clone" class="table-of-contents__link toc-highlight">.Clone</a></li><li><a href="#Component" class="table-of-contents__link toc-highlight">.Component</a></li><li><a href="#Each" class="table-of-contents__link toc-highlight">.Each</a></li><li><a href="#ElseIf" class="table-of-contents__link toc-highlight">.ElseIf</a></li><li><a href="#Form" class="table-of-contents__link toc-highlight">.Form</a></li><li><a href="#If" class="table-of-contents__link toc-highlight">.If</a></li><li><a href="#Iter" class="table-of-contents__link toc-highlight">.Iter</a></li><li><a href="#Observe" class="table-of-contents__link toc-highlight">.Observe</a></li><li><a href="#Switch" class="table-of-contents__link toc-highlight">.Switch</a></li><li><a href="#Template" class="table-of-contents__link toc-highlight">.Template</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 lettuce-magician. Built with Moonwave.</div></div></div></footer></div>
+<script src="/Stir/assets/js/runtime~main.39808622.js"></script>
+<script src="/Stir/assets/js/main.ee4fae04.js"></script>
+</body>
+</html>

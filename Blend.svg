@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg
+   width="120.01043mm"
+   height="114.83623mm"
+   viewBox="0 0 120.01043 114.83623"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-33.149792,-87.996519)">
+    <ellipse
+       style="fill:#ff2d7a;fill-opacity:1;stroke:#ffffff;stroke-width:2.41329;stroke-opacity:0;paint-order:markers stroke fill"
+       id="path1"
+       cx="78.149788"
+       cy="157.83275"
+       rx="43.79335"
+       ry="43.793354" />
+    <ellipse
+       style="fill:#ff8200;fill-opacity:1;stroke:#ffffff;stroke-width:2.41329;stroke-opacity:0;paint-order:markers stroke fill"
+       id="ellipse1"
+       cx="108.16023"
+       cy="132.99652"
+       rx="43.79335"
+       ry="43.793354" />
+    <path
+       id="ellipse3"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2.41329;stroke-opacity:0;paint-order:markers stroke fill"
+       d="m 78.149752,114.03955 a 43.79335,43.793354 0 0 0 -10.012826,1.26762 43.79335,43.793354 0 0 0 -3.769795,17.68936 43.79335,43.793354 0 0 0 43.793189,43.7932 43.79335,43.793354 0 0 0 10.01283,-1.26763 43.79335,43.793354 0 0 0 3.76979,-17.68936 43.79335,43.793354 0 0 0 -43.793188,-43.79319 z" />
+  </g>
+</svg>

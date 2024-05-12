@@ -1,0 +1,37 @@
+gitRepoUrl = "https://github.com/lettuce-magician/Stir"
+gitSourceBranch = "main"
+
+[home]
+enabled = true
+
+[navbar]
+title = "Stir"
+
+[navbar.logo]
+alt = "Stir"
+src = "./Stir.svg"
+
+[[home.features]]
+title = "Component"
+description = "Tired of manually validating component properties? The Component utility is here to help. It allows you to set custom properties and validate types easily!"
+
+[[home.features]]
+title = "Easy Form validation"
+description = "Using the Form State allows you to fill in data while validating and handling it, making it easy to create passwords and other kinds of forms"
+
+[[home.features]]
+title = "Reactive Statements"
+description = "If, Switch and Each are state objects that works inside instances but has reactivity implemented"
+
+[docusaurus]
+title = "Stir"
+projectName = "Stir"
+url = "https://lettuce-magician.github.io"
+baseUrl = "/Stir"
+onBrokenLinks = "throw"
+onBrokenMarkdownLinks = "warn"
+favicon = "/Stir.svg"
+
+[footer]
+style = "dark"
+copyright = "Copyright © 2024 lettuce-magician. Built with Moonwave."

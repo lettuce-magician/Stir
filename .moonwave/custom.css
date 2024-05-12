@@ -1,0 +1,12 @@
+.navbar__logo img {
+    transition: filter 100ms ease-in-out;
+}
+
+.navbar__logo img:hover {
+    filter: drop-shadow(0px 0px 10px rgba(255, 145, 0, 0.8));
+}
+
+:root {
+    --ifm-color-primary: #ff9900;
+    --ifm-code-font-size: 85%;
+}

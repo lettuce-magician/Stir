@@ -4,7 +4,7 @@ description = "Useful utilities for Fusion."
 version = "1.0.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
-exclude = ["docs","build",".moonwave","Packages","Blend.svg",".gitignore","pack.project.json","moonwave.toml","selene.toml"]
+exclude = ["docs","build",".moonwave","Packages","Stir.svg",".gitignore","pack.project.json","moonwave.toml","selene.toml"]
 
 [dependencies]
 Fusion = "elttob/fusion@0.2.0"

@@ -1,5 +1,9 @@
 gitRepoUrl = "https://github.com/lettuce-magician/Stir"
 gitSourceBranch = "main"
+classOrder = [
+    "Stir",
+    "Form"
+]
 
 [home]
 enabled = true
@@ -22,6 +26,8 @@ description = "Using the Form State allows you to fill in data while validating 
 [[home.features]]
 title = "Reactive Statements"
 description = "If, Switch and Each are state objects that works inside instances but has reactivity implemented"
+
+
 
 [docusaurus]
 title = "Stir"

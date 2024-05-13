@@ -1,6 +1,12 @@
 {
   "name": "Stir",
   "tree": {
-    "$path":"src"
+    "$className": "Folder",
+    "Packages": {
+      "$path": "Packages",
+      "Stir": {
+        "$path":"src"
+      }
+    }
   }
 }

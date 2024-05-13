@@ -1,8 +1,9 @@
 local Package = script.Parent.Parent.Fusion
+local Util = script.Parent.Util
 
 local Fusion = require(Package)
-local PubTypes = require(Package.PubTypes)
-local xtypeof = require(Package.Utility.xtypeof)
+local PubTypes = require(Util.types)
+local xtypeof = require(Util.xtypeof)
 local Symbols = require(script.Parent.Symbols)
 local unwrap = require(script.Parent.Util.unwrap)
 

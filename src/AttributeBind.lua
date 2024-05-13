@@ -1,5 +1,8 @@
-local Fusion = require(script.Parent.Parent.Fusion)
-local PubTypes = require(script.Parent.Parent.Fusion.PubTypes)
+local Package = script.Parent.Parent.Fusion
+local Util = script.Parent.Util
+
+local Fusion = require(Package)
+local PubTypes = require(Util.types)
 local Value = Fusion.Value
 
 --[=[

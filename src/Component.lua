@@ -2,7 +2,7 @@ local Package = script.Parent.Parent.Fusion
 local Util = script.Parent.Util
 
 local Fusion = require(Package)
-local types = require(Util.types)
+local PubTypes = require(Util.types)
 local Hydrate = Fusion.Hydrate
 local xtypeof = require(Package.Utility.xtypeof)
 local hasProp = require(Util.hasProp)
@@ -50,7 +50,7 @@ local hasProp = require(Util.hasProp)
     @param Callback (Props: PropertyTable) -> (T)}
     @return (Props: PropertyTable)->(T)
 ]=]
-local Component = function<T>(Allowed:{[string]:types.TypeNames}, Callback:(Props:{[string]:any})->(T))
+local Component = function<T>(Allowed:{[string]:PubTypes.TypeNames}, Callback:(Props:{[string]:any})->(T))
     return function (Props:{[string]:any})
         for k, v in Props do
 			assert(xtypeof(k) == "string", "Cannot have symbols or other types than string as keys.")

@@ -1,7 +1,7 @@
 local Package = script.Parent.Parent.Fusion
 
 local Fusion = require(Package)
-local PubTypes = require(Package.PubTypes)
+local PubTypes = require(script.Parent.Util.types)
 local unwrap = require(script.Parent.Util.unwrap)
 
 local Hydrate = Fusion.Hydrate

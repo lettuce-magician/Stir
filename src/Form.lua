@@ -4,8 +4,7 @@ local Package = script.Parent.Parent.Fusion
 local Util = script.Parent.Util
 
 local Fusion = require(Package)
-local PubTypes = require(Package.PubTypes)
-local types = require(Util.types)
+local PubTypes = require(Util.types)
 
 local Value = Fusion.Value
 
@@ -90,7 +89,7 @@ end
 --- @within Form
 --- Returns the result of the last submission, submitting one if it was cleared or does not exist.
 --- @return Submission
-function class:get(): types.Submission
+function class:get(): PubTypes.Submission
     if self.result == nil then
         self:submit()
     end
@@ -104,7 +103,7 @@ end
     validation errors on the result. Returns a function that disconnects the callback from the
     signal.
 ]=]
-function class:onSubmit(fn:(result:types.Submission)->()): ()->()
+function class:onSubmit(fn:(result:PubTypes.Submission)->()): ()->()
     return self:_addListener("submitListeners", fn)
 end
 
@@ -191,7 +190,7 @@ end
 
     @return Form
 ]=]
-local function Form(validators:{[string]:(any, (boolean)->())->(boolean)}): types.Form
+local function Form(validators:{[string]:(any, (boolean)->())->(boolean)}): PubTypes.Form
    local self = setmetatable({
     props = {},
     validators = validators,

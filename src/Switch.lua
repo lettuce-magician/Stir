@@ -1,9 +1,10 @@
 local Package = script.Parent.Parent.Fusion
+local Util = script.Parent.Util
 
 local Fusion = require(Package)
-local PubTypes = require(Package.PubTypes)
+local PubTypes = require(Util.types)
 local Symbols = require(script.Parent.Symbols)
-local xtypeof = require(Package.Utility.xtypeof)
+local xtypeof = require(Util.xtypeof)
 local Observer = Fusion.Observer
 local Hydrate = Fusion.Hydrate
 

@@ -4,7 +4,7 @@ description = "A module full of fusion utilities."
 version = "1.0.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
-exclude = ["docs","build",".moonwave","Packages","Stir.svg",".gitignore","pack.project.json","moonwave.toml","selene.toml", "Pack.rbxm"]
+exclude = ["docs","build",".moonwave","Packages","Stir.svg",".gitignore","pack.project.json","moonwave.toml","selene.toml", "Pack.rbxm","README.md"]
 license = "MIT"
 
 [dependencies]

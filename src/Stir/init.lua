@@ -32,6 +32,7 @@ local Stir =  {
     Clone = require(script:FindFirstChild("Clone")),
     Observe = require(script.Observe),
     Default = Symbols.Default,
+    Any = Symbols.Any,
 
     Conditions = {
         Equals = MakeCondition(function(v1,v2)
@@ -76,6 +77,12 @@ local Stir =  {
     @within Stir
     @prop Else Symbol
     Used inside `If` blocks, self-explinatory.
+]=]
+
+--[=[
+    @within Stir
+    @prop Any Symbol
+    Used inside [Stir.Component] and [Stir.Template] for setting a value that can receive any type.
 ]=]
 
 return Stir

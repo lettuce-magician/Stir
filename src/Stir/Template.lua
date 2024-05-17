@@ -1,6 +1,6 @@
 local Fusion = require(script.Parent.Parent.Fusion)
 local Hydrate = Fusion.Hydrate
-local types = require(script.Parent.Util.types)
+--local types = require(script.Parent.Util.types)
 
 local strip = require(script.Parent.Util.strip)
 
@@ -33,9 +33,9 @@ local strip = require(script.Parent.Util.strip)
     @param Callback (Props: PropertyTable) -> (T)
     @return function
 ]=]
-local Template = function<T>(Custom:{[string]:types.TypeNames}, Callback:(Props:{[string]:any})->(T))
-    return function (Props:{[string]:any})
-        return Hydrate (Callback(Props)) (strip(Custom,Props))
+local Template = function<T,I>(Custom:T, Callback:(Props:T)->(any))
+    return function (Props:T)
+        return Hydrate (Callback(Props::any)) (strip(Custom::any,Props::any))
     end
 end
 

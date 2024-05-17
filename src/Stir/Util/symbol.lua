@@ -2,7 +2,7 @@ return function (Name:string)
 	local proxy = {
 		-- mimic a specialkey
 		type = "SpecialKey",
-		kind = "Symbol",
+		kind = "Symbol:"..Name,
 		stage = "observer",
 		apply = function() end
 	}

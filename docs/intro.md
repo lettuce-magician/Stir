@@ -19,7 +19,7 @@ The module can be used both in Studio and using a external text editor using Roj
 1. Use `wally init` on your project if you haven't yet.
 2. Add this to your `wally.toml` file:
 ```bash
-Stir = "lettuce-magician/stir@1.0.0"
+Stir = "lettuce-magician/stir@1.0.1"
 ```
 3. Run `wally install`
 4. Done! Just make sure to insert the `Packages` folder into your `project.json` file and you'll be able to use it.
